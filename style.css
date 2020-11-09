@@ -1,0 +1,38 @@
+body {
+    font-family: "Lato",sans-serif;
+}
+.header-div {
+    background-image: url(./assets/img3.jpg);
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.icon-div {
+    font-size: 40px;
+    margin-left: 25px;
+    color: black;
+}
+
+.first-div {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 50px;
+
+}
+.first-div h1 {
+    color: orangered;
+    font-size: 40px;
+}
+.text-div {
+    color: #EC5242;
+    font-size: 22px ;
+}
+.second-div {
+    font-size: 22px;
+    border: 3px solid white;
+    background-color: #f3f3f3;
+    color: #d3d3d3;
+}
