@@ -12,17 +12,37 @@ text-align: center;
 
 .hr1 {
     width: 30px;
+    color: crimson;
 }
+
 .seat-div {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    width: 60%;
+    width: 70%;
     height: 30px;
-    align-content: center;
     border: 1px solid;
     border-radius: 20px;
+    margin-left: 80px;
 }
+.table-div {
+    margin-top: 30px;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
 .seat-div h5 {
     color: #f34518;
     font-size: 14px ;

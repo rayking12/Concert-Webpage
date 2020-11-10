@@ -15,20 +15,36 @@ body {
   src: url(./assets/fonts/Cocogoose\ Pro\ Italic-trial.ttf);
 }
 
-.header-div {
-  background-image: url(./assets/free.jpg);
-  background-position: center;
-background-repeat: no-repeat;
-background-size: cover;
+.jumbotron {
+  background: linear-gradient(to top, rgba(94, 92, 92, 0.8), rgba(201, 198, 198, 0.8)), url(./assets/free.jpg) center no-repeat;
+  background-size: cover;
+  height: 100%;
 }
+.text-bg {
+  background: linear-gradient(#e9301bc6, #eb6e08a8), url(./assets/free.jpg) no-repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-position: to
+}
+.jumbotron {
+  padding: 0;
+  margin-bottom: 0;
+   border-radius: 0; 
+}
+.top-nav {
+  background-color: #3e3e3e;
+}
+
+
 .font-div {
   font-size: 30px;
   margin-left: 30px;
 }
 
 .icon-div {
-  font-size: 150px;
+  font-size: 50px;
   margin-left: 25px;
+  margin-bottom: 20px;
   color: white;
 }
 
@@ -36,7 +52,7 @@ background-size: cover;
   display: flex;
   flex-direction: column;
   margin-top: 50px;
-  margin-left: 20px;
+  margin-left:5px;
 }
 
 .first-div h1 {
@@ -52,14 +68,8 @@ background-size: cover;
 }
 
 .second-div {
-  font-family: lato;
-  margin: 10px;
-  font-size: 13px;
-  border: 1px solid white;
-  background-color: #f3f3f3de;
-  line-height: 20px;
-  text-align: start;
-  color: #5d5d5d;
+  font-size: 15px;
+  margin-left: 0;
 }
 
 .time-div {
@@ -79,44 +89,38 @@ background-size: cover;
 .time-div address {
   font-size: 17px;
 }
+.cards .card {
+  background-color: rgba(255, 255, 255, 0.061);
+}
+
 
 .main-div {
-  background-image: url(./assets/dark2.jpg);
+  background-image: url(./assets/dark.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.main-div h3 {
-  text-align: center;
-  color: #f3f3f3;
-  font-size: 17px;
-}
 .hr1 {
-  width: 30px;
-  color: #f34518;
+  width: 40px;
+  background-color: #ff3640;
 }
 
 .main-program {
-  background-color: rgba(245, 245, 245, 0.548);
   display: flex;
-  line-height: 22px;
+  margin: 40px;
 }
 
 .main-program p {
   font-family: "Cocogoose-light";
   font-weight: lighter;
   font-size: 13px;
-  margin-left: 40px;
   color: #f3f4f6;
 }
 .main-program h3 {
   font-size: 18px;
-  margin-left: 25px;
-  margin-right: 20px;
   text-align: center;
   justify-content: center;
-  margin-bottom: 50px;
   color: #fc4b3d;
 }
 
@@ -156,7 +160,7 @@ background-size: cover;
 .img-div {
   height: 100px;
   align-content: center;
-  margin-top: 70px;
+  margin-top: 30px;
 }
 .featured-div h2 {
  font-weight: bold;
@@ -185,4 +189,16 @@ font-size: 13px;
 .title-div {
 line-height: 10px;
 height: 30px;
+}
+
+@media (max-width: 768px) {
+  .main-div h3 {
+    text-align: center;
+    color: #f3f3f3;
+    font-size: 17px;
+  }
+
+  .main-program p {
+    margin-left: 40px;
+  }
 }

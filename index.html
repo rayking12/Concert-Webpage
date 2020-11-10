@@ -6,32 +6,64 @@
     <title>Concert</title>
     <link rel="stylesheet" href="style.css" />
     <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link
       href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
-    <div class="header-div">
-      <header>
-        <nav>
-          <div class="font-div">
-            <span
-              class="iconify"
-              data-icon="dashicons:menu-alt3"
-              data-inline="false"
-            ></span>
-          </div>
-          <button><a href="./about.html"> About</a></button>
-          <button><a href="./tickets.html"> Tickets</a></button>
+    <main class="container-fluid">
+      <nav class="row d-none d-md-block">
+        <nav class="col-12 top-nav py-2 text-right">
+          <aside class="container p-0">
+            <ul class="list-unstyled m-0">
+              <li class="list-inline-item pr-2">
+                <i class="text-white fab fa-facebook-f"></i>
+              </li>
+              <li class="list-inline-item pr-3">
+                <i class="text-white fab fa-twitter"></i>
+              </li>
+              <li class="list-inline-item pr-3">
+                <a class="text-white" href="#">English</a>
+              </li>
+              <li class="list-inline-item pr-3">
+                <a class="text-white" href="#">Login</a>
+              </li>
+            </ul>
+          </aside>
         </nav>
-        <div class="first-div">
-          <div class="text-div">
+      </nav>
+      <nav class="row d-none d-md-block">
+        <article class="container d-none  d-flex justify-content-between align-items-center  py-1 pt-3">
+          <h2 class="d-none">"future"</h2>
+          <img class="bot-nav-img" src="assets/img.png" height="60px" width="60px" alt="Entertainmet logo">
+          <ul class="list-unstyled ">
+            <li class="list-inline-item"><a class="px-4 text-secondary" href="about.html">About</a></li>
+            <li class="list-inline-item"><a class="px-4 text-secondary" href="#main program">Program</a></li>
+            <li class="list-inline-item"><a class="px-4 text-secondary" href="tickets.html">Tickets</a></li>
+            </li>
+          </ul>
+        </article>
+        </nav>
+      <div class="header-div">
+        <nav>
+          <span
+          class="iconify d-lg-none"
+          data-icon="dashicons:menu-alt3"
+          data-inline="false"
+          ></span>
+        </nav>
+        
+        <header class="row jumbotron jumbotron-fluid mb-0">
+          <article class="col-lg-12 header p-0">
+            <div class=" first-div">
+              <div class="text-div mb-3">
             <h4>Hello!</h4>
-            <h1>OPENFEST MUSICAL AND DRAMA CONCERT 2020</h1>
+            <h1 class="font-cocogoose display-1 font-weight-bold m-0 text-bg">OPENFEST MUSICAL AND DRAMA CONCERT 2020</h1>
           </div>
           <div class="second-div">
-            <p>
+            <p class="col-md-9 bg-light border-3 border border-white p-3 mt-3">
               A joyful celebration believing in the value of openness and
               sharing,creating a atmosphere for the display of talents and gift
               and launching them into a world full of possibilities.
@@ -43,69 +75,91 @@
           <time>9:00PM</time>
           <address>@ National Art Exhibition Center, Lagos, Nigeria</address>
         </div>
-      </header>
+      </article>
     </div>
-    <div class="main-div">
-      <h3>Main Program</h3>
-      <hr class="hr1 " />
-      <div class="program-div">
-        <article class="main-program">
-          <span
-            class="iconify icon-div"
-            data-icon="mdi:dance-ballroom"
-            data-inline="false"
-          ></span>
-          <h3>DANCING</h3>
-          <p>
-            watch dancers from different cultural background showcasing thier
-            cultures in the best way they can.
-          </p>
+</header>
+
+    <section class=" py-5 main-div text-white">
+      <h3 class="position-rel d-lg-flex justify-content-center border-head mb-4">Main Program</h3>
+      <hr class="hr1" />
+      <article class="d-lg-flex ">
+        <article class=" cards main-program">
+          <aside class="card mb-2">
+            <aside class="card-body text-center" >
+              <span
+              class="iconify icon-div"
+              data-icon="mdi:dance-ballroom"
+              data-inline="false"
+              ></span>
+              <h3 class="card-title">DANCING</h3>
+              <p class="card-text">
+                watch dancers from different cultural background showcasing thier
+                cultures in the best way they can.
+              </p>
+            </aside>
+          </aside>
+          
         </article>
-      </div>
-      <div class="program-div">
-        <article class="main-program">
-            <span class="iconify icon-div" data-icon="bytesize:music" data-inline="false"></span>
-          <h3>MUSIC</h3>
-          <p>
-           talented musician presents thier God given gifts. showcasing variants music styles
-          </p>
+        <article class=" cards main-program">
+          <aside class="card mb-2">
+            <aside class="card-body text-center" >
+              <span class="iconify icon-div " data-icon="bytesize:music" data-inline="false"></span>
+              
+              <h3 class="card-title">MUSIC</h3>
+              <p class="card-text">
+                talented musician presents thier God given gifts. showcasing variants music styles
+                
+              </p>
+            </aside>
+          </aside>
+          
         </article>
-      </div>
-      <div class="program-div">
-        <article class="main-program">
-          <span
-            class="iconify icon-div"
-            data-icon="mdi:dance-ballroom"
-            data-inline="false"
-          ></span>
-          <h3>DRAMA PLAY</h3>
-          <p>
-            watch dancers from different cultural background showcasing thier
-            cultures in the best way they can.
-          </p>
+        <article class=" cards main-program">
+          <aside class="card mb-2">
+            <aside class="card-body text-center" >
+              <span class="iconify icon-div" data-icon="flat-color-icons:reading-ebook" data-inline="false"></span>
+              
+              <h3 class="card-title">POETRY</h3>
+              <p class="card-text">
+                Talented readers showing how to do it best by reading poems, writeups, the best wrtings from the young ones
+              </p>
+            </aside>
+          </aside>
+          
         </article>
-      </div>
-      <div class="program-div">
-        <article class="main-program">
-            <span class="iconify icon-div" data-icon="flat-color-icons:reading-ebook" data-inline="false"></span>
-          <h3>POETRY</h3>
-          <p>
-            watch dancers from different cultural background showcasing thier
-            cultures in the best way they can.
-          </p>
-        </article>
-    </div>
-    <div class="submit-div">
-        <a href="tickets.html"><button class="form-submit">JOIN OPENFEST 2020</button></a> 
-    </div>
+        <article class="d-sm-none cards main-program">
+          <aside class="card mb-2">
+            <aside class="card-body text-center" >
+              <span
+              class="iconify icon-div"
+              data-icon="mdi:dance-ballroom"
+              data-inline="false"
+              ></span>
+              <h3 class="card-title">DRAMA</h3>
+              <p class="card-text">
+                watch drama play from different cultural background showcasing thier
+                cultures in the best way they can.
+              </p>
+            </aside>
+          </aside>
+        </article>          
         
-    </div>
-    <div class="featured-div">
-        <h2>SPECIAL APPEARANCES</h2>
-        <hr class="hr1">
+      </article>
+      <div class="submit-div">
+        <a href="tickets.html"><button class="form-submit">JOIN OPENFEST 2020</button></a> 
+      </div>
+    </section>
+  </div>
+  
+</section>
+<section class="row py-5 px-3 ">
+      
+        <div class="featured-div">
+          <h2>SPECIAL APPEARANCES</h2>
+          <hr class="hr1">
         <div>
             <article class="special-div">
-                <img class="img-div" src="./assets/rock.jpg" alt="performance">
+              <img class="img-div" src="./assets/rock.jpg" alt="performance">
                 <div class="band-div">
                     <h5>KING'S BAND</h5>
                     <p class="p-div"> Peter Cruchy, Tommy ray, John Anderson</p>
@@ -124,9 +178,47 @@
                     <hr class="hr2">
                     <p class="p2-div">The small band that started from the little garage down in Netherlands, has grown into a worldwide recognized band that has performed in countries such as U.S.A, Canada,South Africa </p>
                 </div>
-            </article>
-           
+              </article>
+                  <button type="button" class="d-md-none btn btn-light text-body btn-block btn-lg border-3 border-color py-3">MORE
+                    <span class="">⯆</span></button>
+            <section class="row partners d-none d-md-block py-5">
+              <h4 class="position-rel d-flex justify-content-center text-secondary border-head mb-4">Partner</h4>
+              <article class="container d-flex justify-content-around align-items-center">
+                <h2 class="d-none">heading</h2>
+                <aside class="col text-center">
+                  <img class="img-fluid" src="assets/imgs/main/mozilla-logo.png" alt="mozilla">
+                </aside>
+                <aside class="col text-center">
+                  <img class="img-fluid" src="assets/imgs/main/google-logo.png" alt="google">
+                </aside>
+                <aside class="col text-center">
+                  <img class="img-fluid" src="assets/imgs/main/naver-logo.png" alt="google">
+                </aside>
+                <aside class="col text-center">
+                  <img class="img-fluid" src="assets/imgs/main/dk-logo.png" alt="google">
+                </aside>
+                <aside class="col text-center">
+                  <img src="assets/imgs/main/airbnb-logo.png" alt="google">
+                </aside>
+              </article>
+            </section>
+            <footer class="row footer d-none d-md-block">
+              <article class="container d-flex justify-content-center align-items-center text-center">
+                <h2 class="d-none">heading</h2>
+                <aside class="col-4">
+                  <img class="img-fluid w-50" src="assets/imgs/hm-logo.svg" alt="High Mountain logo">
+                </aside>
+                <aside class="col-8">
+                  <small>2020 High Mountain Egypt.</small><br>
+                  <small>© Reserved By <a class="badge badge-info" href="https://github.com/od-c0d3r">O.D</a></small>
+                </aside>
+              </article>
+            </footer>
         </div>
     </div>
+  </main>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
   </body>
 </html>
