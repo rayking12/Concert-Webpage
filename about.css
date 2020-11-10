@@ -1,0 +1,58 @@
+body {
+    font-family: "Lato",sans-serif;
+    font-size: 22px;
+  }
+  .header-div {
+    background-image: url(./assets/img3-100.jpg);
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  }
+  
+  .icon-div {
+    font-size: 50px;
+    margin-left: 25px;
+    color: black;
+  }
+  
+  .first-div {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .first-div h1 {
+    color: #a70102;
+    font-size: 40px;
+  }
+  
+  .text-div {
+    color: #f34518
+  }
+  
+  .second-div {
+    margin: 10px 0;
+    font-size: 22px;
+    border: 3px solid white;
+    background-color: #f3f3f3;
+    color: #5d5d5d;
+  }
+  
+  .time-div {
+    margin: 30px;
+    font-size: 22px;
+    color: #5e5e5e;
+    padding-bottom:  70px;
+  }
+  .time-div date {
+    font-size: 30px;
+    font-weight: bolder;
+  }
+  .time-div time {
+    font-size: 22px;
+  
+  }
+  .time-div address {
+    font-size: 17px;
+  }

@@ -1,38 +1,188 @@
 body {
-    font-family: "Lato",sans-serif;
+  font-family: "Lato",sans-serif;
 }
-.header-div {
-    background-image: url(./assets/img3.jpg);
-    background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+@font-face {
+  font-family: Cocogoose-light;
+  src: url(./assets/fonts/Cocogoose\ Pro\ Semilight-trial.ttf);
+}
+@font-face {
+  font-family: Cocogoose;
+  src: url(./assets/fonts/Cocogoose\ Pro\ Italic-trial.ttf);
+}
 
+@font-face {
+  font-family: Cocogoose-200;
+  src: url(./assets/fonts/Cocogoose\ Pro\ Italic-trial.ttf);
+}
+
+.header-div {
+  background-image: url(./assets/free.jpg);
+  background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+.font-div {
+  font-size: 30px;
+  margin-left: 30px;
 }
 
 .icon-div {
-    font-size: 40px;
-    margin-left: 25px;
-    color: black;
+  font-size: 150px;
+  margin-left: 25px;
+  color: white;
 }
 
 .first-div {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  margin-left: 20px;
+}
+
+.first-div h1 {
+  font-family: "Cocogoose", sans-serif;
+  color: #f34518;
+  font-size: 32px;
+}
+
+.text-div {
+  font-family: "Cocogoose-200", sans-serif;
+  font-weight: lighter;
+  color: #f34518;
+}
+
+.second-div {
+  font-family: lato;
+  margin: 10px;
+  font-size: 13px;
+  border: 1px solid white;
+  background-color: #f3f3f3de;
+  line-height: 20px;
+  text-align: start;
+  color: #5d5d5d;
+}
+
+.time-div {
+  margin: 30px;
+  font-size: 22px;
+  color: #5e5e5e;
+  padding-bottom:  70px;
+}
+.time-div date {
+  font-size: 30px;
+  font-weight: bolder;
+}
+.time-div time {
+  font-size: 22px;
 
 }
-.first-div h1 {
-    color: orangered;
-    font-size: 40px;
+.time-div address {
+  font-size: 17px;
 }
-.text-div {
-    color: #EC5242;
-    font-size: 22px ;
+
+.main-div {
+  background-image: url(./assets/dark2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-.second-div {
-    font-size: 22px;
-    border: 3px solid white;
-    background-color: #f3f3f3;
-    color: #d3d3d3;
+
+.main-div h3 {
+  text-align: center;
+  color: #f3f3f3;
+  font-size: 17px;
+}
+.hr1 {
+  width: 30px;
+  color: #f34518;
+}
+
+.main-program {
+  background-color: rgba(245, 245, 245, 0.548);
+  display: flex;
+  line-height: 22px;
+}
+
+.main-program p {
+  font-family: "Cocogoose-light";
+  font-weight: lighter;
+  font-size: 13px;
+  margin-left: 40px;
+  color: #f3f4f6;
+}
+.main-program h3 {
+  font-size: 18px;
+  margin-left: 25px;
+  margin-right: 20px;
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 50px;
+  color: #fc4b3d;
+}
+
+.program-div {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  margin: 15px
+}
+
+.form-submit {
+  color: white;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: bold;
+  font-family: "Roboto Condensed",sans-serif;
+  background-color: #f61602;
+  border: none;
+}
+.submit-div {
+  display: flex;
+ justify-content: center;
+ height: 90px;
+ margin-bottom: 30px;
+}
+.special-div {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin-top: 10px;
+  margin: 15px
+}
+.band-div {
+  display: block;
+  margin-left: 30px;
+}
+.img-div {
+  height: 100px;
+  align-content: center;
+  margin-top: 70px;
+}
+.featured-div h2 {
+ font-weight: bold;
+ font-size: 14px;
+ text-align: center;
+ color: #3e3d44;
+}
+.hr2 {
+  width: 30px;
+  align-items:flex-start ;
+  color: #f34518;
+}
+.band-div {
+  margin: 10px;
+}
+
+.p-div {
+  color: #fc4b3d;
+  font-size: 13px;
+}
+
+.p2-div {
+font-size: 13px;
+}
+
+.title-div {
+line-height: 10px;
+height: 30px;
 }
