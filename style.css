@@ -27,6 +27,7 @@ body {
   background: linear-gradient(#e9301bc6, #eb6e08a8), url(./assets/free.jpg) no-repeat;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  width: 100%;
 }
 
 .top-nav {
@@ -39,7 +40,7 @@ body {
 }
 
 .hr2 {
-  margin-top: 30px;
+  margin-top: 40px;
   background-color: #f34518;
 }
 
@@ -54,13 +55,13 @@ body {
   display: flex;
   flex-direction: column;
   margin-top: 50px;
-  margin-left: 100px;
+  width: 100%;
 }
 
 .first-div h1 {
   font-family: "Cocogoose", sans-serif;
   color: #f34518;
-  font-size: 100px;
+  font-size: 10px;
 }
 
 .text-div {
@@ -210,6 +211,10 @@ body {
     font-size: 17px;
   }
 
+  .first-div h1 {
+    font-size: 50px;
+  }
+
   .main-program p {
     margin-left: 40px;
   }
@@ -220,5 +225,11 @@ body {
 
   .grid {
     display: block;
+  }
+}
+
+@media (min-width: 768px) {
+  .first-div h1 {
+    font-size: 100px;
   }
 }

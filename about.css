@@ -173,3 +173,9 @@ body {
 .footer {
   background-color: #414246;
 }
+
+@media (max-width: 768px) {
+  .second-div {
+    margin-left: 40px;
+  }
+}
