@@ -30,6 +30,11 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
+.bot-nav {
+  height: 60px;
+  width: 60px;
+}
+
 .top-nav {
   background-color: #3e3e3e;
 }
@@ -134,6 +139,8 @@ body {
 
 .imag-div {
   margin: 20px;
+  height: 50%;
+  width: 50%;
 }
 
 .ibadan {
@@ -164,6 +171,11 @@ body {
   color: rgb(250, 249, 248);
   font-size: 14px;
   margin-top: 20px;
+}
+
+.image-div {
+  height: 30%;
+  width: 30%;
 }
 
 .sponsors {
