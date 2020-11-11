@@ -128,19 +128,26 @@ body {
 margin: 20px;
 }
 .ibadan {
-  position: absolute;
-  bottom: 200px;
-  right: 380px;
-  background-color: rgba(0, 0, 0, 0.281);
-  color: white;
-  padding-left: 20px;
-  padding-right: 20px;
+  position: absolute; 
+  			left: 0; 
+  			right: 0; 
+        z-index: 9999; 
+        background-color: azure;
+        margin-left: 20px; 
+        justify-content: center;
+        margin-top: 20px;
+  			margin-right: 20px; 
 }
 
 .place {
-  position: relative;
-  text-align: center;
-  color: white;
+  			left: 0; 
+  			right: 0px; 
+        z-index: 1; 
+        display: block;
+  			background-image: url('assets/concert2.jpg'); 
+  			width: 100%; 
+        height: 800px; 
+        margin: 20px;
 }
 
   .footer-div h3 {
@@ -158,9 +165,5 @@ margin: 20px;
     background-color: #414246;
   }
   @media (max-width: 768px) {
-    .ibadan {
-      width: 40%;
-      bottom: 50px;
-      right: 190px;
-    }
+    
   }
