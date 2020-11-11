@@ -1,10 +1,12 @@
 body {
-  font-family: "Lato",sans-serif;
+  font-family: "Lato", sans-serif;
 }
+
 @font-face {
   font-family: Cocogoose-light;
   src: url(./assets/fonts/Cocogoose\ Pro\ Semilight-trial.ttf);
 }
+
 @font-face {
   font-family: Cocogoose;
   src: url(./assets/fonts/Cocogoose\ Pro\ Italic-trial.ttf);
@@ -20,22 +22,22 @@ body {
   background-size: cover;
   height: 100%;
 }
+
 .text-bg {
   background: linear-gradient(#e9301bc6, #eb6e08a8), url(./assets/free.jpg) no-repeat;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-position: to
 }
 
 .top-nav {
   background-color: #3e3e3e;
 }
 
-
 .font-div {
   font-size: 30px;
   margin-left: 30px;
 }
+
 .hr2 {
   margin-top: 30px;
   background-color: #f34518;
@@ -52,8 +54,7 @@ body {
   display: flex;
   flex-direction: column;
   margin-top: 50px;
-  margin-left:100px;
-
+  margin-left: 100px;
 }
 
 .first-div h1 {
@@ -69,37 +70,36 @@ body {
 }
 
 .second-div {
- 
-    font-family: "Cocogoose-light";
+  font-family: "Cocogoose-light", sans-serif;
   margin: 10px 0;
   font-size: 15px;
   color: #5d5d5d;
-
-
 }
 
 .time-div {
   margin: 30px;
   font-size: 22px;
   color: #5e5e5e;
-  padding-bottom:  70px;
+  padding-bottom: 70px;
   margin-left: 100px;
 }
-.time-div date {
+
+.date {
   font-size: 30px;
   font-weight: bolder;
 }
+
 .time-div time {
   font-size: 22px;
-
 }
+
 .time-div address {
   font-size: 17px;
 }
+
 .cards .card {
   background-color: rgba(255, 255, 255, 0.061);
 }
-
 
 .main-div {
   background-image: url(./assets/metal-pattern.png);
@@ -119,11 +119,12 @@ body {
 }
 
 .main-program p {
-  font-family: "Cocogoose-light";
+  font-family: "Cocogoose-light", sans-serif;
   font-weight: lighter;
   font-size: 13px;
   color: #f3f4f6;
 }
+
 .main-program h3 {
   font-size: 18px;
   text-align: center;
@@ -134,8 +135,7 @@ body {
 .program-div {
   display: flex;
   justify-content: center;
-  margin-top: 10px;
-  margin: 15px
+  margin: 15px;
 }
 
 .form-submit {
@@ -143,45 +143,41 @@ body {
   text-transform: uppercase;
   cursor: pointer;
   font-weight: bold;
-  font-family: "Roboto Condensed",sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   background-color: #f61602;
   border: none;
 }
+
 .submit-div {
   display: flex;
- justify-content: center;
- height: 90px;
- margin-bottom: 30px;
+  justify-content: center;
+  height: 90px;
+  margin-bottom: 30px;
 }
+
 .special-div {
   display: flex;
   justify-content: space-between;
   position: relative;
-  margin-top: 10px;
-  margin: 15px
+  margin: 15px;
 }
+
 .band-div {
   display: block;
   margin-left: 30px;
 }
+
 .img-div {
   height: 100px;
   align-content: center;
   margin-top: 30px;
 }
+
 .featured-div h2 {
- font-weight: bold;
- font-size: 14px;
- text-align: center;
- color: #3e3d44;
-}
-.hr2 {
-  width: 30px;
-  align-items:flex-start ;
-  color: #f34518;
-}
-.band-div {
-  margin: 10px;
+  font-weight: bold;
+  font-size: 14px;
+  text-align: center;
+  color: #3e3d44;
 }
 
 .p-div {
@@ -190,18 +186,19 @@ body {
 }
 
 .p2-div {
-font-size: 13px;
+  font-size: 13px;
 }
 
 .grid {
-display: grid;
-grid-template-columns: 2fr 2fr ;
+  display: grid;
+  grid-template-columns: 2fr 2fr;
 }
 
 .title-div {
-line-height: 10px;
-height: 30px;
+  line-height: 10px;
+  height: 30px;
 }
+
 .footer-div {
   background-color: #414246;
 }
@@ -216,11 +213,12 @@ height: 30px;
   .main-program p {
     margin-left: 40px;
   }
+
   .first-div {
     margin-left: 10px;
   }
+
   .grid {
     display: block;
   }
- 
-}  
+}

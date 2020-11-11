@@ -1,6 +1,6 @@
 .page-title {
   text-align: center;
-  color: #FFFFFF;
+  color: #fff;
   font-weight: 100;
   font-size: 40px;
   margin-top: 60px;
@@ -12,11 +12,9 @@
   min-height: 930px;
   display: block;
   position: relative;
-  background: #333333;
   background-image: url("https://images.unsplash.com/photo-1448485780098-7e0b78781fc1?crop=entropy&dpr=2&fit=crop&fm=jpg&h=750&ixjsv=2.1.0&ixlib=rb-0.3.5&q=50&w=1450");
-  background-size: cover;
   background-position: center center;
-  position: relative;
+  background-size: cover;
   padding-bottom: 50px;
 }
 
@@ -24,13 +22,13 @@
   position: absolute;
   width: 100%;
   height: 100%;
-  background: #111111;
+  background: #111;
   display: block;
   content: "";
   top: 0;
   left: 0;
   z-index: 1;
-  opacity: .6;
+  opacity: 0.6;
 }
 
 .wrapper .container {
@@ -47,12 +45,12 @@
 }
 
 .wrapper footer h3 {
-  color: #FFFFFF;
+  color: #fff;
   font-weight: 200;
 }
 
 .wrapper footer .social-icon {
-  color: #FFFFFF;
+  color: #fff;
   opacity: 0.8;
   font-size: 34px;
   margin: 20px;
@@ -65,15 +63,8 @@
 .ticket-card {
   margin-top: 15vh;
   margin-bottom: 15vh;
-  background: #FFFFFF;
+  background: #fff;
   border-radius: 4px;
-}
-
-.ticket-card:hover .cover img, .ticket-card.active .cover img {
-  -webkit-transform: translate(0, -50px);
-  transform: translate(0, -50px);
-  -webkit-box-shadow: 0 10px 20px -4px rgba(22, 22, 22, 0.5);
-          box-shadow: 0 10px 20px -4px rgba(22, 22, 22, 0.5);
 }
 
 .ticket-card .cover {
@@ -85,11 +76,11 @@
 .ticket-card .cover img {
   width: 100%;
   position: relative;
-  z-index: 2;
   margin-top: -30px;
-  -webkit-box-shadow: 0 10px 16px -6px rgba(22, 22, 22, 0.5);
-          box-shadow: 0 10px 16px -6px rgba(22, 22, 22, 0.5);
+  z-index: 2;
   border-radius: 4px;
+  -webkit-box-shadow: 0 10px 16px -6px rgba(22, 22, 22, 0.5);
+  box-shadow: 0 10px 16px -6px rgba(22, 22, 22, 0.5);
   -webkit-transform: translate(0, 0);
   transform: translate(0, 0);
   -webkit-transition: transform 300ms cubic-bezier(0.34, 2, 0.6, 1), box-shadow 300ms ease, opacity 300ms ease;
@@ -99,18 +90,25 @@
   transition: transform 300ms cubic-bezier(0.34, 2, 0.6, 1), box-shadow 300ms ease, opacity 300ms ease, -webkit-transform 300ms cubic-bezier(0.34, 2, 0.6, 1), -webkit-box-shadow 300ms ease;
 }
 
+.ticket-card .cover:hover .cover img, .ticket-card .cover.active .cover img {
+  -webkit-transform: translate(0, -50px);
+  transform: translate(0, -50px);
+  -webkit-box-shadow: 0 10px 20px -4px rgba(22, 22, 22, 0.5);
+  box-shadow: 0 10px 20px -4px rgba(22, 22, 22, 0.5);
+}
+
 .ticket-card .cover .info {
   position: absolute;
+  bottom: 0;
   width: 100%;
-  bottom: 0px;
   padding: 0 15px;
-  color: #777777;
+  color: #777;
 }
 
 .ticket-card .cover .info .going,
 .ticket-card .cover .info .tickets-left {
-  padding-bottom: 10px;
   border-bottom: 1px solid #f3f3f3;
+  padding-bottom: 10px;
   width: 50%;
 }
 
@@ -119,13 +117,13 @@
 }
 
 .ticket-card .cover .info .tickets-left {
-  float: right;
   text-align: right;
+  float: right;
 }
 
 .ticket-card .cover .info .fa {
-  color: #CCCCCC;
   margin-right: 5px;
+  color: #ccc;
 }
 
 .ticket-card .artist {
@@ -134,10 +132,10 @@
 
 .ticket-card .artist .info {
   font-weight: 600;
-  font-size: 12px;
   text-transform: uppercase;
-  color: #BBBBBB;
+  font-size: 12px;
   margin-bottom: 0;
+  color: #bbb;
 }
 
 .ticket-card .artist .name {
@@ -147,7 +145,7 @@
 }
 
 .ticket-card .ticket {
-  float: center;
+  float: left;
 }
 
 .ticket-card .ticket small {
@@ -160,32 +158,32 @@
 }
 
 .ticket-card .price .from {
-  color: #BBBBBB;
+  color: #bbb;
 }
 
 .ticket-card .price .value {
   font-size: 28px;
   font-weight: 200;
-  color: #00bbff;
+  color: #0bf;
   margin-top: -5px;
 }
 
 .ticket-card .price .value b {
-  font-size: 18px;
   font-weight: 200;
+  font-size: 18px;
 }
 
 .ticket-card .list-unstyled {
   max-height: 200px;
   overflow-x: scroll;
-  background: #EEEEEE;
+  background: #eee;
   margin-bottom: 0;
-  -webkit-box-shadow: inset 0px 4px 10px rgba(0, 0, 0, 0.25);
-          box-shadow: inset 0px 4px 10px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: inset 0 4px 10px rgba(0, 0, 0, 0.25);
+  box-shadow: inset 0 4px 10px rgba(0, 0, 0, 0.25);
 }
 
 .ticket-card .list-unstyled li {
-  border-bottom: 1px dotted #CCCCCC;
+  border-bottom: 1px dotted #ccc;
   padding: 5px 30px;
   overflow: hidden;
   width: 100%;
@@ -194,12 +192,12 @@
 }
 
 .ticket-card .list-unstyled li .btn-buy {
-  position: absolute;
   right: 15px;
+  position: absolute;
   top: 13px;
   padding: 8px 20px;
   border-radius: 6px;
-  background: #00bbff;
+  background: #0bf;
   border: 0;
   opacity: 0;
   -webkit-transition: transform 300ms cubic-bezier(0.34, 2, 0.6, 1), box-shadow 300ms ease, opacity 300ms ease;
@@ -217,14 +215,14 @@
   border-bottom: none;
 }
 
-.ticket-card .list-unstyled li:before, .ticket-card .list-unstyled li:after {
+.ticket-card .list-unstyled li :before, .ticket-card .list-unstyled liafter {
   display: table;
   content: " ";
   clear: both;
 }
 
 .ticket-card .list-unstyled li .price .value {
-  color: #444444;
+  color: #444;
   font-size: 22px;
   margin-top: 10px;
 }
@@ -234,7 +232,7 @@
 }
 
 .ticket-card .body .info {
-  color: #777777;
+  color: #777;
 }
 
 .ticket-card .body .location,
@@ -252,21 +250,16 @@
   text-align: right;
 }
 
-.ticket-card .body .fa {
-  color: #CCCCCC;
-  margin-right: 5px;
-}
-
 .ticket-card .footer .btn {
   width: 100%;
   background: transparent;
-  border-top: 1px dotted #BBBBBB;
+  border-top: 1px dotted #bbb;
   border-radius: 0;
   padding: 15px 8px;
   font-size: 12px;
   font-weight: 600;
   text-transform: uppercase;
-  color: #666666;
+  color: #666;
   -webkit-box-shadow: none;
           box-shadow: none;
 }
