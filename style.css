@@ -2,20 +2,13 @@ body {
   font-family: "Lato", sans-serif;
 }
 
-/* @font-face {
-  font-family: Cocogoose-light;
-  src: url(./assets/fonts/Cocogoose Pro Semilight-trial.ttf);
-}
-
+/* @font-face kit by Fonts2u (https://fonts2u.com) */
 @font-face {
-  font-family: Cocogoose;
-  src: url(./assets/fonts/Cocogoose-Pro-Italic-trial.ttf);
+  font-family: "Cocogoose";
+  src: url("assets/fonts/Cocogoose_trial.eot") format("eot"), url("assets/fonts/Cocogoose_trial.woff") format("woff"), url("assets/fonts/Cocogoose_trial.ttf") format("truetype"), url("assets/fonts/Cocogoose_trial.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
 }
-
-@font-face {
-  font-family: Cocogoose-200;
-  src: url(./assets/fonts/Cocogoose\ Pro\ Italic-trial.ttf);
-} */
 
 .jumbotron {
   background: linear-gradient(to top, rgba(94, 92, 92, 0.8), rgba(201, 198, 198, 0.8)), url(./assets/free.jpg) center no-repeat;
@@ -70,13 +63,13 @@ body {
 }
 
 .text-div {
-  font-family: "Cocogoose-200", sans-serif;
+  font-family: "Cocogoose", sans-serif;
   font-weight: lighter;
   color: #f34518;
 }
 
 .second-div {
-  font-family: "Cocogoose-light", sans-serif;
+  font-family: "Cocogoose", sans-serif;
   margin: 10px 0;
   font-size: 15px;
   color: #5d5d5d;

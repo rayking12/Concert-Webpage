@@ -4,18 +4,10 @@ body {
 }
 
 @font-face {
-  font-family: "Cocogoose-light";
-  src: url(./assets/fonts/Cocogoose\ Pro\ Semilight-trial.ttf);
-}
-
-@font-face {
   font-family: "Cocogoose";
-  src: url(./assets/fonts/Cocogoose\ Pro\ Italic-trial.ttf);
-}
-
-@font-face {
-  font-family: "Cocogoose-200";
-  src: url(./assets/fonts/Cocogoose\ Pro\ Italic-trial.ttf);
+  src: url("assets/fonts/Cocogoose_trial.eot") format("eot"), url("assets/fonts/Cocogoose_trial.woff") format("woff"), url("assets/fonts/Cocogoose_trial.ttf") format("truetype"), url("assets/fonts/Cocogoose_trial.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
 }
 
 .jumbotron {
