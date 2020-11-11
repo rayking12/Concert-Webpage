@@ -3,7 +3,7 @@ Give a ⭐️ if you like this project!<br><br>
 
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# HTML/CSS Capstone Project : High Mountain Online Bootcamp
+# HTML/CSS Capstone Project : OPENFEST CONCERT PAGE
 
 ![screenshot](assets/screenshot.png)
 
@@ -13,11 +13,11 @@ Give a ⭐️ if you like this project!<br><br>
 
 <img src="assets/imgs/color-typograph.png" width="50%">
 
-<img src="assets/imgs/screenshot.png" align="right" width="40%">
+<img src="assets/screenshot.png" align="right" width="40%">
 
 ## 📺 Live Demo 
 
-[OPENFEST](https://od-c0d3r.github.io/highmount/)
+[OPENFEST](https://rayking12.github.io/html-capstone-project/)
 
 ## 📡 Technologies used :
 
@@ -45,7 +45,8 @@ Follow these steps to get a local copy up and running :
 ## 👤 Auther Ray King
 
 - [<img alt="Twitter Follow" src="https://img.shields.io/github/followers/od-c0d3r?label=Github&style=social">](https://github.com/rayking12)
-- <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/od_coder?label=Twitter&style=social">
+- [<img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/od_coder?label=Twitter&style=social">]
+(https://twitter.com/_RayKing__)
 
 ## Show your support
 
