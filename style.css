@@ -26,11 +26,7 @@ body {
   -webkit-text-fill-color: transparent;
   background-position: to
 }
-.jumbotron {
-  padding: 0;
-  margin-bottom: 0;
-   border-radius: 0; 
-}
+
 .top-nav {
   background-color: #3e3e3e;
 }
@@ -39,6 +35,10 @@ body {
 .font-div {
   font-size: 30px;
   margin-left: 30px;
+}
+.hr2 {
+  margin-top: 30px;
+  background-color: #f34518;
 }
 
 .icon-div {
@@ -52,13 +52,14 @@ body {
   display: flex;
   flex-direction: column;
   margin-top: 50px;
-  margin-left:5px;
+  margin-left:100px;
+
 }
 
 .first-div h1 {
   font-family: "Cocogoose", sans-serif;
   color: #f34518;
-  font-size: 32px;
+  font-size: 100px;
 }
 
 .text-div {
@@ -68,8 +69,13 @@ body {
 }
 
 .second-div {
+ 
+    font-family: "Cocogoose-light";
+  margin: 10px 0;
   font-size: 15px;
-  margin-left: 0;
+  color: #5d5d5d;
+
+
 }
 
 .time-div {
@@ -77,6 +83,7 @@ body {
   font-size: 22px;
   color: #5e5e5e;
   padding-bottom:  70px;
+  margin-left: 100px;
 }
 .time-div date {
   font-size: 30px;
@@ -95,7 +102,7 @@ body {
 
 
 .main-div {
-  background-image: url(./assets/dark.jpg);
+  background-image: url(./assets/metal-pattern.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -186,9 +193,17 @@ body {
 font-size: 13px;
 }
 
+.grid {
+display: grid;
+grid-template-columns: 2fr 2fr ;
+}
+
 .title-div {
 line-height: 10px;
 height: 30px;
+}
+.footer-div {
+  background-color: #414246;
 }
 
 @media (max-width: 768px) {
@@ -201,4 +216,11 @@ height: 30px;
   .main-program p {
     margin-left: 40px;
   }
-}
+  .first-div {
+    margin-left: 10px;
+  }
+  .grid {
+    display: block;
+  }
+ 
+}  
