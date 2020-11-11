@@ -9,9 +9,6 @@ Give a ⭐️ if you like this project!<br><br>
 
  _OpenFest is a concert organized annually with several special appearances._
 
- ## 🛠 Colors and Typograph :
-
-<img src="assets/imgs/color-typograph.png" width="50%">
 
 <img src="assets/screenshot.png" align="right" width="40%">
 
@@ -45,8 +42,7 @@ Follow these steps to get a local copy up and running :
 ## 👤 Auther Ray King
 
 - [<img alt="Twitter Follow" src="https://img.shields.io/github/followers/od-c0d3r?label=Github&style=social">](https://github.com/rayking12)
-- [<img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/od_coder?label=Twitter&style=social">]
-(https://twitter.com/_RayKing__)
+- <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/od_coder?label=Twitter&style=social">
 
 ## Show your support
 
