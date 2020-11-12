@@ -4,12 +4,12 @@ Give a ⭐️ if you like this project!<br><br>
 
 # HTML/CSS Capstone Project : OPENFEST CONCERT PAGE
 
-![screenshot](assets/screenshot.png)
+![screenshot](assets/img/screenshot.png)
 
  _OpenFest is a concert organized annually with several special appearances._
 
 
-<img src="assets/screenshot.png" align="right" width="40%">
+<img src="assets/img/screenshot.png" align="right" width="40%">
 
 ## 📺 Live Demo 
 
@@ -42,7 +42,8 @@ Follow these steps to get a local copy up and running :
 
 - [<img alt="Twitter Follow" src="https://img.shields.io/github/followers/od-c0d3r?label=Github&style=social">](https://github.com/rayking12)
 - <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/od_coder?label=Twitter&style=social">
-- 
+- [![Linkedin](https://i.stack.imgur.com/gVE0j.png) LinkedIn](https://www.linkedin.com/in/king-ray-514b89133)
+&nbsp;
 
 ## Show your support
 

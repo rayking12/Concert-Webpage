@@ -1,6 +1,8 @@
+$color: #ec5242;
+
 @font-face {
   font-family: "Cocogoose";
-  src: url("assets/fonts/Cocogoose_trial.eot") format("eot"), url("assets/fonts/Cocogoose_trial.woff") format("woff"), url("assets/fonts/Cocogoose_trial.ttf") format("truetype"), url("assets/fonts/Cocogoose_trial.svg") format("svg");
+  src: url("../fonts/Cocogoose_trial.eot") format("eot"), url("../fonts/Cocogoose_trial.woff") format("woff"), url("../fonts/Cocogoose_trial.ttf") format("truetype"), url("../fonts/Cocogoose_trial.svg") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -64,12 +66,12 @@
 .menuToggle input:checked ~ span:nth-last-child(3) {
   opacity: 0;
   -webkit-transform: rotate(0deg) scale(0.2, 0.2);
-  transform: rotate(0deg) scale(0.2, 0.2);
+          transform: rotate(0deg) scale(0.2, 0.2);
 }
 
 .menuToggle input:checked ~ span:nth-last-child(2) {
   -webkit-transform: rotate(-45deg) translate(0, -1px);
-  transform: rotate(-45deg) translate(0, -1px);
+          transform: rotate(-45deg) translate(0, -1px);
 }
 
 .menuToggle input:checked ~ ul {
@@ -122,19 +124,13 @@
 }
 
 .label-div {
-  color: #ec5242;
+  color: $color;
 }
 
 .section-div {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .table-div {
@@ -149,7 +145,7 @@
 
 .hr1 {
   width: 30px;
-  background-color: #ec5242;
+  background-color: $color;
 }
 
 .text-center p {
@@ -157,12 +153,8 @@
   border-radius: 20px;
   color: #d3d3d3;
 }
-
 @media (min-width: 768px) {
   .table-div {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
   }
 }
-/*# sourceMappingURL=tickets.css.map */
