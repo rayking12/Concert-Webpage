@@ -5,104 +5,117 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="tickets.css">
+  <link
+  rel="stylesheet"
+  href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+  integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+  crossorigin="anonymous"
+/>
 </head>
 <body>
-  <div class="wrapper">
-    <div class="container">
-      <h2 class="page-title">OPENFEST TICKETS</h2>
-      <div class="row">
-        <div class="col-lg-4 col-md-6 col-sm-6">
-          <div class="ticket-card">
-            <div class="cover">
-              <img src="https://s28.postimg.org/p916fev0t/week.jpg" alt="" />
-              <div class="info">
-                <div class="going">
-                  <i class="fa fa-group"></i> 1000 seats
-                </div>
-                <div class="tickets-left">
-                  <i class="fa fa-ticket"></i> 500 Tickets Left
-                </div>
-              </div>
-            </div>
-            <div class="body">
+  <main class="container-fluid">
+    <nav class="row d-none d-md-block">
+      <nav class="col-12 top-nav py-2 text-right">
+        <aside class="container p-0">
+          <ul class="list-unstyled m-0">
+            <li class="list-inline-item pr-2">
+              <i class="text-white fab fa-facebook-f"></i>
+            </li>
+            <li class="list-inline-item pr-3">
+              <i class="text-white fab fa-twitter"></i>
+            </li>
+            <li class="list-inline-item pr-3">
+              <a class="text-white" href="#">English</a>
+            </li>
+            <li class="list-inline-item pr-3">
+              <a class="text-white" href="#">Login</a>
+            </li>
+          </ul>
+        </aside>
+      </nav>
+    </nav>
+    <nav class="row d-none d-md-block">
+      <article
+        class="container d-none d-flex justify-content-between align-items-center py-1 pt-3"
+      >
+        <h2 class="d-none">"future"</h2>
+        <img
+          class="bot-nav-img bot-div"
+          src="assets/img.png"
+          alt="Entertainment logo"
+        />
+        <ul class="list-unstyled">
+          <li class="list-inline-item">
+            <a class="px-4 text-secondary" href="about.html">About</a>
+          </li>
+          <li class="list-inline-item">
+            <a class="px-4 text-secondary" href="#main">Program</a>
+          </li>
+          <li class="list-inline-item">
+            <a class="px-4 text-secondary" href="tickets.html">Tickets</a>
+          </li>
+        </ul>
+      </article>
+    </nav>
+    <div class="header-div">
+      <header class="row jumbotron jumbotron-fluid mb-0">
+        <nav class="col-12 d-md-none">
+          <nav class="menuToggle">
+            <input type="checkbox">
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul class="menu">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="plans.html">Ticket</a></li>
+            </ul>
+          </nav>
+        </nav>
+          <article class="container text-center">
+            <h2>Select Tickets</h2>
+            <hr class="hr1">
+            <p> Please select your preferred ticket</p>
+          </article>
+
+          <section class="container section-div">
+            <table  class="table table-div table-bordered">
+              <tr>
+                <th scope="col">Tickets</th>
+                <th scope="col">Basic Ticket</th>
+                <th scope="col">Premium Ticket</th>
+                <th scope="col">V.I.P Ticket</th>
+              </tr>
+              <tr >
+                <th scope="row">Normal</th>
+                <td> <input type="radio"   name="price check">
+                  <label class="label-div" >$50</label></td>
+                <td> <input type="radio"   name="price check">
+                  <label class="label-div" >$80</label></td>
+                <td> <input type="radio"   name="price check">
+                  <label class="label-div" >$150</label></td>
+              </tr>
+              <tr>
+                <th>Student</th>
+                <td> <input type="radio"   name="price check">
+                  <label class="label-div">$50</label></td>
+                <td> <input type="radio"   name="price check">
+                  <label class="label-div">$70</label></td>
+                <td> <input type="radio"   name="price check">
+                  <label class="label-div">$80</label></td>
+              </tr>
+              <tr>
+                <th>Group (per Ticket)</th>
+                <td> <input type="radio"   name="price check">
+                  <label class="label-div">$50</label></td>
+                <td> <input type="radio"   name="price check">
+                  <label class="label-div">$70</label></td>
+                <td> <input type="radio"   name="price check">
+                  <label class="label-div">$120</label></td>
+              </tr>
               
-              <div class="artist">
-                <h6 class="info">OPENFEST 2020</h6>
-              </div>
-              <div class="price">
-                <div class="from">From</div>
-                <div class="value">
-                  <b>$</b>50
-                </div>
-              </div>
-              
-              <div class="clearfix"></div>
-              <div class="info">
-                <p class="location">
-                  <i class="fa fa-map-marker"></i> Nigeria,
-                </p>
-                <p class="date">
-                  <i class="fa fa-calendar"></i> 09 NOV, 2020
-                </p>
-              </div>
-              <div class="clearfix"></div>
-            </div>
-            <div class="collapse">
-              <ul class="list-unstyled">
-                <li>
-                  <div class="ticket">
-                    <h5>Basic Ticket<br>
-                    </h5>
-                  </div>
-                  <div class="price">
-                    <div class="value"><b>$</b>50</div>
-                  </div>
-                  <a href="#" class="btn btn-info btn-sm btn-buy">Buy Now!</a>
-                </li>
-                <li>
-                  <div class="ticket">
-                    <h5>Regular Ticket<br>
-                    <small>15 Tickets left</small>
-                  </h5>
-                  </div>
-                  <div class="price">
-                    <div class="value"><b>$</b>70</div>
-                  </div>
-                  <a href="#" class="btn btn-info btn-sm btn-buy">Buy Now!</a>
-                </li>
-                <li>
-                  <div class="ticket">
-                    <h5>Premium Ticket<br>
-                  </h5>
-                  </div>
-                  <div class="price">
-                    <div class="value"><b>$</b>120</div>
-                  </div>
-                  <a href="#" class="btn btn-info btn-sm btn-buy">Buy Now!</a>
-                </li>
-                <li>
-                  <div class="ticket">
-                    <h5>VIP Ticket<br>
-                  </h5>
-                  </div>
-                  <div class="price">
-                    <div class="value"><b>$</b>170</div>
-                  </div>
-                  <a href="#" class="btn btn-info btn-sm btn-buy">Buy Now!</a>
-                </li>
-              </ul>
-            </div>
-            
-              </div>
-            </div>
-          
-        </div>
-
-
-      </div>
-    </div>
-
-  
+            </table>
+          </section>
 
 </body>
 </html>

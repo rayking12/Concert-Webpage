@@ -10,17 +10,135 @@ body {
   font-style: normal;
 }
 
+.menuToggle {
+  display: block;
+  z-index: 1;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+       user-select: none;
+}
+
+.menuToggle input {
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -2px;
+  left: 15px;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 2;
+  -webkit-touch-callout: none;
+}
+
+.menuToggle span {
+  display: block;
+  width: 39px;
+  height: 6px;
+  margin-bottom: 5px;
+  position: relative;
+  background: #232323;
+  border-radius: 3px;
+  z-index: 1;
+  -webkit-transform-origin: 4px 0;
+  transform-origin: 4px 0;
+  -webkit-transition: background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  transition: background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+}
+
+.menuToggle span:first-child {
+  -webkit-transform-origin: 0% 0%;
+  transform-origin: 0% 0%;
+}
+
+.menuToggle span:nth-last-child(2) {
+  -webkit-transform-origin: 0% 100%;
+  transform-origin: 0% 100%;
+}
+
+.menuToggle input:checked ~ span {
+  opacity: 1;
+  -webkit-transform: rotate(45deg) translate(-2px, -1px);
+          transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+
+.menuToggle input:checked ~ span:nth-last-child(3) {
+  opacity: 0;
+  -webkit-transform: rotate(0deg) scale(0.2, 0.2);
+          transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+.menuToggle input:checked ~ span:nth-last-child(2) {
+  -webkit-transform: rotate(-45deg) translate(0, -1px);
+          transform: rotate(-45deg) translate(0, -1px);
+}
+
+.menuToggle input:checked ~ ul {
+  -webkit-transform: none;
+          transform: none;
+}
+
+.menuToggle .menu {
+  position: absolute;
+  width: 300px;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+  background: #ededed;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  -webkit-transform-origin: 0% 0%;
+          transform-origin: 0% 0%;
+  -webkit-transform: translate(-100%, 0);
+          transform: translate(-100%, 0);
+  -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  transition: -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+}
+
+.menuToggle .menu li {
+  padding: 10px 0;
+  font-size: 22px;
+}
+
+.menuToggle .menu li a {
+  text-decoration: none;
+  color: #232323;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+
+.menuToggle .menu li :hover {
+  color: tomato;
+}
+
+.bot-nav .bot-nav-img {
+  max-height: 80px;
+}
+
+.position-rel {
+  position: relative;
+}
+
+/* Main container */
 .jumbotron {
-  background: linear-gradient(to top, rgba(94, 92, 92, 0.8), rgba(201, 198, 198, 0.8)), url(./assets/free.jpg) center no-repeat;
+  background: linear-gradient(to top, rgba(255, 255, 255, 0.993), rgba(255, 255, 255, 0.8)), url(./assets/concert.jpg) center no-repeat;
   background-size: cover;
-  height: 100%;
 }
 
 .text-bg {
-  background: linear-gradient(#e9301bc6, #eb6e08a8), url(./assets/free.jpg) no-repeat;
+  background: linear-gradient(#e9301bc6, #e22d18a8), url(./assets/bg-text.jpg) no-repeat;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  background-position: top;
+  background-size: cover;
   width: 100%;
+  font-size: 8vw;
 }
 
 .top-nav {
@@ -39,13 +157,11 @@ body {
 
 .hr2 {
   margin-top: 40px;
-  background-color: #f34518;
+  background-color: #ec5242;
 }
 
 .icon-div {
   font-size: 50px;
-  margin-left: 25px;
-  margin-bottom: 20px;
   color: white;
 }
 
@@ -53,25 +169,27 @@ body {
   display: flex;
   flex-direction: column;
   margin-top: 50px;
-  width: 100%;
+  margin-left: 100px;
+  width: 60%;
 }
 
 .first-div h1 {
   font-family: "Cocogoose", sans-serif;
-  color: #f34518;
-  font-size: 10px;
+  color: #ec5242;
 }
 
-.text-div {
-  font-family: "Cocogoose", sans-serif;
-  font-weight: lighter;
-  color: #f34518;
+.text-div h4 {
+  font-family: "Lato", sans-serif;
+  font-size: 28px;
+  font-weight: normal;
+  color: #ec5242;
 }
 
 .second-div {
   font-family: "Cocogoose", sans-serif;
+  font-weight: lighter;
   margin: 10px 0;
-  font-size: 15px;
+  font-size: 12px;
   color: #5d5d5d;
 }
 
@@ -84,18 +202,24 @@ body {
 }
 
 .date-div {
-  font-size: 30px;
-  font-weight: bolder;
+  display: flex;
+  margin-left: 100px;
 }
 
-.time-div time {
+.date-div h2 {
   font-size: 22px;
+  font-family: "Cocogoose", sans-serif;
+  color: #272a31;
 }
 
-.time-div address {
+.date-div h4 {
   font-size: 17px;
+  margin-left: 20px;
 }
 
+.address {
+  margin-left: 100px;
+}
 .cards .card {
   background-color: rgba(255, 255, 255, 0.061);
 }
@@ -109,12 +233,25 @@ body {
 
 .hr1 {
   width: 40px;
-  background-color: #ff3640;
+  background-color: #ec5242;
+}
+
+.hr3 {
+  margin-top: 60px;
+  background-color: #ec5242;
 }
 
 .main-program {
   display: flex;
-  margin: 40px;
+  margin: 0 30px;
+}
+
+.card-div {
+  width: 90%;
+}
+
+.card-main {
+  width: 100%;
 }
 
 .main-program p {
@@ -128,7 +265,7 @@ body {
   font-size: 18px;
   text-align: center;
   justify-content: center;
-  color: #fc4b3d;
+  color: #ec5242;
 }
 
 .program-div {
@@ -143,7 +280,7 @@ body {
   cursor: pointer;
   font-weight: bold;
   font-family: "Roboto Condensed", sans-serif;
-  background-color: #f61602;
+  background-color: #ec5242;
   border: none;
 }
 
@@ -180,7 +317,7 @@ body {
 }
 
 .p-div {
-  color: #fc4b3d;
+  color: #ec5242;
   font-size: 13px;
 }
 
@@ -209,25 +346,28 @@ body {
     font-size: 17px;
   }
 
-  .first-div h1 {
-    font-size: 50px;
-  }
-
-  .main-program p {
-    margin-left: 40px;
-  }
-
   .first-div {
-    margin-left: 10px;
+    margin-left: 5px;
+    width: 100%;
   }
 
   .grid {
     display: block;
   }
-}
 
-@media (min-width: 768px) {
-  .first-div h1 {
-    font-size: 100px;
+  .card-div {
+    width: 85%;
+  }
+
+  .img-div {
+    width: 40%;
+  }
+
+  .date-div {
+    margin-left: 10px;
+  }
+
+  .address {
+    margin-left: 10px;
   }
 }

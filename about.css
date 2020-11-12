@@ -10,19 +10,135 @@ body {
   font-style: normal;
 }
 
+
+.menuToggle {
+  display: block;
+  z-index: 1;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+       user-select: none;
+}
+
+.menuToggle input {
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -2px;
+  left: 15px;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 2;
+  -webkit-touch-callout: none;
+}
+
+.menuToggle span {
+  display: block;
+  width: 39px;
+  height: 6px;
+  margin-bottom: 5px;
+  position: relative;
+  background: #232323;
+  border-radius: 3px;
+  z-index: 1;
+  -webkit-transform-origin: 4px 0;
+  transform-origin: 4px 0;
+  -webkit-transition: background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  transition: background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+}
+
+.menuToggle span:first-child {
+  -webkit-transform-origin: 0% 0%;
+  transform-origin: 0% 0%;
+}
+
+.menuToggle span:nth-last-child(2) {
+  -webkit-transform-origin: 0% 100%;
+  transform-origin: 0% 100%;
+}
+
+.menuToggle input:checked ~ span {
+  opacity: 1;
+  -webkit-transform: rotate(45deg) translate(-2px, -1px);
+          transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+
+.menuToggle input:checked ~ span:nth-last-child(3) {
+  opacity: 0;
+  -webkit-transform: rotate(0deg) scale(0.2, 0.2);
+          transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+.menuToggle input:checked ~ span:nth-last-child(2) {
+  -webkit-transform: rotate(-45deg) translate(0, -1px);
+          transform: rotate(-45deg) translate(0, -1px);
+}
+
+.menuToggle input:checked ~ ul {
+  -webkit-transform: none;
+          transform: none;
+}
+
+.menuToggle .menu {
+  position: absolute;
+  width: 300px;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+  background: #ededed;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  -webkit-transform-origin: 0% 0%;
+          transform-origin: 0% 0%;
+  -webkit-transform: translate(-100%, 0);
+          transform: translate(-100%, 0);
+  -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  transition: -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+}
+
+.menuToggle .menu li {
+  padding: 10px 0;
+  font-size: 22px;
+}
+
+.menuToggle .menu li a {
+  text-decoration: none;
+  color: #232323;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+
+.menuToggle .menu li :hover {
+  color: tomato;
+}
+
+.position-rel {
+  position: relative;
+}
+
+/* Main container */
 .jumbotron {
-  background: linear-gradient(to top, rgba(145, 145, 145, 0.8), rgba(201, 198, 198, 0.8)), url(./assets/free.jpg) center no-repeat;
+  background: linear-gradient(to top, rgba(255, 255, 255, 0.993), rgba(255, 255, 255, 0.8)), url(./assets/concert.jpg) center no-repeat;
   background-size: cover;
-  height: 100%;
 }
 
 .text-bg {
-  background: linear-gradient(#e9301bc6, #eb6e08a8), url(./assets/free.jpg) no-repeat;
+  background: linear-gradient(#e9301bc6, #e22d18a8), url(./assets/bg-text.jpg) no-repeat;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  background-position: top;
+  background-size: cover;
+  width: 100%;
+  font-size: 8vw;
 }
 
-.bot-nav {
+.bot-div {
   height: 60px;
   width: 60px;
 }
@@ -44,39 +160,37 @@ body {
   margin-top: 50px;
 }
 
-.first-div h5 {
-  font-family: "Cogogoose", sans-serif;
-  font-size: 18px;
+.first-div h4 {
+  font-family: "lato", sans-serif;
+  font-size: 30px;
 }
 
 .first-div h1 {
   font-family: "Cocogoose", sans-serif;
-  color: #a70102;
-  font-size: 30px;
 }
 
 .text-div {
-  color: #f34518;
+  color: #ec5242;
 }
 
 .logo-div {
-  border-bottom: 3px solid black;
-  border-bottom: 20px;
-  padding-bottom: 20px;
+  border: 2px solid #f3f3f3;
 }
 
 .logo-div h3 {
-  font-size: 18px;
-  text-transform: uppercase;
+  font-family: "Cocogoose", sans-serif;
+  font-weight: lighter;
+  margin-top: 50px;
   text-align: center;
 }
 
 .logo-div p {
-  font-size: 11px;
-  color: #646464;
-  font-family: "Cocogoose-light", sans-serif;
+  font-size: 13px;
+  color: #d3d3d3;
+  font-family: "Cocogoose", sans-serif;
   text-align: center;
-  justify-content: center;
+  align-items: center;
+  align-content: center;
 }
 
 .second-div {
@@ -84,7 +198,6 @@ body {
   margin: 10px 0;
   font-size: 15px;
   color: #5d5d5d;
-  margin-left: 250px;
 }
 
 .hr1 {
@@ -93,28 +206,36 @@ body {
 }
 
 .time-div {
+  font-family: "Cocogoose", sans-serif;
+  font-weight: lighter;
   margin: 30px;
   font-size: 16px;
   text-align: center;
-  color: #ec5242;
+  color: #272a31;
   padding-bottom: 10px;
 }
 
 .img-div {
   text-align: center;
-  border: 1px solid #f34518;
+  border: 1px solid #272a31;
+  width: 70%;
+  margin-left: 150px;
+  margin-bottom: 60px;
 }
 
 .past-div h4 {
-  font-size: 18px;
+  font-family: "Cocogoose", sans-serif;
+  font-weight: normal;
+  font-size: 22px;
   text-align: center;
+  margin-top: 30px;
 }
 
 .past-logo p {
   text-align: center;
   margin-left: 20px;
   font-size: 20px;
-  color: #f34518;
+  color: #d3d3d3;
 }
 
 .past-logo {
@@ -130,9 +251,14 @@ body {
 }
 
 .imag-div {
-  margin: 20px;
-  height: 50%;
-  width: 50%;
+  margin: 10px;
+  height: 40%;
+  width: 40%;
+}
+
+.imag2-div {
+  height: 10%;
+  width: 30%;
 }
 
 .ibadan {
@@ -165,7 +291,13 @@ body {
   margin-top: 20px;
 }
 
+.image-main {
+  display: flex;
+  justify-content: space-around;
+}
+
 .image-div {
+  align-items: center;
   height: 30%;
   width: 30%;
 }
@@ -179,7 +311,16 @@ body {
 }
 
 @media (max-width: 768px) {
-  .second-div {
-    margin-left: 40px;
+  .image-main {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .img-div {
+    margin-left: 65px;
+  }
+
+  .imag-div {
+    width: 60%;
   }
 }

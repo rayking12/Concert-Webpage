@@ -1,4 +1,3 @@
-# html-capstone-project
 Give a ⭐️ if you like this project!<br><br>
 
 ![](https://img.shields.io/badge/Microverse-blueviolet)
@@ -43,6 +42,7 @@ Follow these steps to get a local copy up and running :
 
 - [<img alt="Twitter Follow" src="https://img.shields.io/github/followers/od-c0d3r?label=Github&style=social">](https://github.com/rayking12)
 - <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/od_coder?label=Twitter&style=social">
+- 
 
 ## Show your support
 

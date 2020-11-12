@@ -1,301 +1,160 @@
-$border-radius-base: 4px;
+$color: #ec5242;
 
-$border-radius: $border-radius-base;
-$border-radius-top: $border-radius-base $border-radius-base 0 0;
-
-$padding-base: 15px;
-
-@mixin transform($transforms) {
-  -moz-transform: $transforms;
-  -o-transform: $transforms;
-  -ms-transform: $transforms;
-  -webkit-transform: $transforms;
-  transform: $transforms;
+@font-face {
+  font-family: "Cocogoose";
+  src: url("assets/fonts/Cocogoose_trial.eot") format("eot"), url("assets/fonts/Cocogoose_trial.woff") format("woff"), url("assets/fonts/Cocogoose_trial.ttf") format("truetype"), url("assets/fonts/Cocogoose_trial.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
 }
 
-@mixin translate($x, $y) {
-  @include transform(translate($x, $y));
-}
-
-@mixin transition($time) {
-  -webkit-transition: transform $time cubic-bezier(0.34, 2, 0.6, 1), box-shadow $time ease, opacity $time ease;
-  -moz-transition: transform $time cubic-bezier(0.34, 2, 0.6, 1), box-shadow $time ease, opacity $time ease;
-  -o-transition: transform $time cubic-bezier(0.34, 2, 0.6, 1), box-shadow $time ease, opacity $time ease;
-  -ms-transition: transform $time cubic-bezier(0.34, 2, 0.6, 1), box-shadow $time ease, opacity $time ease;
-  transition: transform $time cubic-bezier(0.34, 2, 0.6, 1), box-shadow $time ease, opacity $time ease;
-}
-
-.page-title {
-  text-align: center;
-  color: #fff;
-  font-weight: 100;
-  font-size: 40px;
-  margin-top: 60px;
-  margin-bottom: 40px;
-}
-
-.wrapper {
-  width: 100%;
-  min-height: 930px;
+.menuToggle {
   display: block;
-  position: relative;
-  background-image: url("https://images.unsplash.com/photo-1448485780098-7e0b78781fc1?crop=entropy&dpr=2&fit=crop&fm=jpg&h=750&ixjsv=2.1.0&ixlib=rb-0.3.5&q=50&w=1450");
-  background-position: center center;
-  background-size: cover;
-  padding-bottom: 50px;
-
-  &::after {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: #111;
-    display: block;
-    content: "";
-    top: 0;
-    left: 0;
-    z-index: 1;
-    opacity: 0.6;
-  }
-
-  .container {
-    z-index: 2;
-    position: relative;
-  }
-
-  footer {
-    position: absolute;
-    z-index: 3;
-    bottom: 20px;
-    width: 100%;
-    text-align: center;
-
-    h3 {
-      color: #fff;
-      font-weight: 200;
-    }
-
-    .social-icon {
-      color: #fff;
-      opacity: 0.8;
-      font-size: 34px;
-      margin: 20px;
-
-      &:hover {
-        opacity: 1;
-      }
-    }
-  }
+  z-index: 1;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
 }
 
-.ticket-card {
-  margin-top: 15vh;
-  margin-bottom: 15vh;
-  background: #fff;
-  border-radius: $border-radius;
+.menuToggle input {
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -2px;
+  left: 15px;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 2;
+  -webkit-touch-callout: none;
+}
 
-  .cover {
-    border-radius: $border-radius-top;
-    position: relative;
-    margin: 15px;
+.menuToggle span {
+  display: block;
+  width: 39px;
+  height: 6px;
+  margin-bottom: 5px;
+  position: relative;
+  background: #232323;
+  border-radius: 3px;
+  z-index: 1;
+  -webkit-transform-origin: 4px 0;
+  transform-origin: 4px 0;
+  -webkit-transition: background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  transition: background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+}
 
-    img {
-      width: 100%;
-      position: relative;
-      margin-top: -30px;
-      z-index: 2;
-      border-radius: $border-radius-base;
-      box-shadow: 0 10px 16px -6px rgba(22, 22, 22, 0.5);
+.menuToggle span:first-child {
+  -webkit-transform-origin: 0% 0%;
+  transform-origin: 0% 0%;
+}
 
-      @include translate(0, 0);
-      @include transition(300ms);
-    }
+.menuToggle span:nth-last-child(2) {
+  -webkit-transform-origin: 0% 100%;
+  transform-origin: 0% 100%;
+}
 
-    &:hover,
-    &.active {
-      .cover {
-        img {
-          @include translate(0, -50px);
+.menuToggle input:checked ~ span {
+  opacity: 1;
+  -webkit-transform: rotate(45deg) translate(-2px, -1px);
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
 
-          box-shadow: 0 10px 20px -4px rgba(22, 22, 22, 0.5);
-        }
-      }
-    }
+.menuToggle input:checked ~ span:nth-last-child(3) {
+  opacity: 0;
+  -webkit-transform: rotate(0deg) scale(0.2, 0.2);
+          transform: rotate(0deg) scale(0.2, 0.2);
+}
 
-    .info {
-      position: absolute;
-      bottom: 0;
-      width: 100%;
-      padding: 0 $padding-base;
-      color: #777;
+.menuToggle input:checked ~ span:nth-last-child(2) {
+  -webkit-transform: rotate(-45deg) translate(0, -1px);
+          transform: rotate(-45deg) translate(0, -1px);
+}
 
-      .going,
-      .tickets-left {
-        border-bottom: 1px solid #f3f3f3;
-        padding-bottom: 10px;
-        width: 50%;
-      }
+.menuToggle input:checked ~ ul {
+  -webkit-transform: none;
+  transform: none;
+}
 
-      .going {
-        float: left;
-      }
+.menuToggle .menu {
+  position: absolute;
+  width: 300px;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+  background: #ededed;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  -webkit-transform-origin: 0% 0%;
+  transform-origin: 0% 0%;
+  -webkit-transform: translate(-100%, 0);
+  transform: translate(-100%, 0);
+  -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  transition: -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+}
 
-      .tickets-left {
-        text-align: right;
-        float: right;
-      }
+.menuToggle .menu li {
+  padding: 10px 0;
+  font-size: 22px;
+}
 
-      .fa {
-        margin-right: 5px;
-        color: #ccc;
-      }
-    }
-  }
+.menuToggle .menu li a {
+  text-decoration: none;
+  color: #232323;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
 
-  .artist {
-    float: left;
+.menuToggle .menu li :hover {
+  color: tomato;
+}
 
-    .info {
-      font-weight: 600;
-      text-transform: uppercase;
-      font-size: 12px;
-      margin-bottom: 0;
-      color: #bbb;
-    }
+.top-nav {
+  background-color: #3e3e3e;
+}
 
-    .name {
-      font-weight: 200;
-      font-size: 22px;
-      margin-top: 5px;
-    }
-  }
+.bot-div {
+  height: 60px;
+  width: 60px;
+}
 
-  .ticket {
-    float: right;
+.label-div {
+  color: $color;
+}
 
-    small {
-      font-size: 75%;
-    }
-  }
+.section-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-  .price {
-    float: right;
-    text-align: right;
+.table-div {
+  border: 5px solid;
+}
 
-    .from {
-      color: #bbb;
-    }
+.text-center h2 {
+  font-family: "Cocogoose", sans-serif;
+  font-weight: 100;
+  font-size: 20px;
+}
 
-    .value {
-      font-size: 28px;
-      font-weight: 200;
-      color: #0bf;
-      margin-top: -5px;
+.hr1 {
+  width: 30px;
+  background-color: $color;
+}
 
-      b {
-        font-weight: 200;
-        font-size: 18px;
-        //vertical-align: top;
-      }
-    }
-  }
-
-  .list-unstyled {
-    max-height: 200px;
-    overflow-x: scroll;
-    background: #eee;
-    margin-bottom: 0;
-    box-shadow: inset 0 4px 10px rgba(0, 0, 0, 0.25);
-
-    li {
-      border-bottom: 1px dotted #ccc;
-      padding: 5px $padding-base * 2;
-      overflow: hidden;
-      width: 100%;
-      display: block;
-      position: relative;
-
-      .btn-buy {
-        right: 15px;
-        position: absolute;
-        top: 13px;
-        padding: 8px 20px;
-        border-radius: 6px;
-        background: #0bf;
-        border: 0;
-        opacity: 0;
-
-        @include transition(300ms);
-      }
-
-      &:hover {
-        .btn-buy {
-          opacity: 1;
-        }
-      }
-
-      &:last-child {
-        border-bottom: none;
-      }
-
-      &before,
-      &after {
-        display: table;
-        content: " ";
-        clear: both;
-      }
-
-      .price {
-        .value {
-          color: #444;
-          font-size: 22px;
-          margin-top: 10px;
-        }
-      }
-    }
-  }
-
-  .body {
-    padding: 5px $padding-base * 2;
-
-    .info {
-      color: #777;
-    }
-
-    .location,
-    .date {
-      padding-top: 10px;
-      //border-top: 1px solid #f3f3f3;
-      width: 50%;
-    }
-
-    .location {
-      float: left;
-    }
-
-    .date {
-      float: right;
-      text-align: right;
-    }
-  }
-
-  .footer {
-    .btn {
-      width: 100%;
-      background: transparent;
-      border-top: 1px dotted #bbb;
-      border-radius: 0;
-      padding: 15px 8px;
-      font-size: 12px;
-      font-weight: 600;
-      text-transform: uppercase;
-      color: #666;
-      box-shadow: none;
-
-      &:focus,
-      &:hover,
-      &:active {
-        outline: none !important;
-      }
-    }
+.text-center p {
+  border: 1px solid #272a31;
+  border-radius: 20px;
+  color: #d3d3d3;
+}
+@media (min-width: 768px) {
+  .table-div {
+    justify-content: center;
   }
 }
