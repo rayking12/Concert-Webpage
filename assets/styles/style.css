@@ -137,7 +137,7 @@ h3 {
 
 /* Main container */
 .jumbotron {
-  background: linear-gradient(to top, rgba(255, 255, 255, 0.993), rgba(255, 255, 255, 0.8)), url(../img/concert.jpg) center no-repeat;
+  background: linear-gradient(to top, #f6f6f6, #f9f9f9e0), url(../img/concert.jpg) center no-repeat;
   background-size: cover;
 }
 
@@ -148,7 +148,7 @@ h3 {
   background-position: top;
   background-size: cover;
   width: 100%;
-  font-size: 8vw;
+  font-size: 7vw;
 }
 
 .top-nav {
@@ -190,6 +190,7 @@ h3 {
 
 .text-div h4 {
   font-family: "Lato", sans-serif;
+  font-size: 50px;
   font-weight: normal;
   color: #ec5242;
 }
@@ -201,6 +202,10 @@ h3 {
   color: #5d5d5d;
 }
 
+.second-div p {
+  font-size: 11px;
+}
+
 .date-div {
   display: flex;
   margin-left: 100px;
@@ -208,14 +213,12 @@ h3 {
 
 .date-div h2 {
   font-family: "Cocogoose", sans-serif;
-  color: #272a31;
-}
-
-.date-div h4 {
-  margin-left: 20px;
+  color: #575757;
 }
 
 .address {
+  font-weight: 500;
+  color: #575757;
   margin-left: 100px;
 }
 
@@ -223,11 +226,15 @@ h3 {
   background-color: rgba(255, 255, 255, 0.061);
 }
 
+.card:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
 .main-div {
   background-image: url(../img/metal-pattern.png);
   background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-repeat: repeat;
 }
 
 .hr1 {
@@ -246,11 +253,15 @@ h3 {
 }
 
 .card-div {
-  width: 90%;
+  width: 30%;
 }
 
 .card-main {
-  width: 100%;
+  width: 80%;
+}
+
+.p2-div {
+  font-size: 12px;
 }
 
 .main-program p {
@@ -272,17 +283,18 @@ h3 {
 }
 
 .form-submit {
-  color: white;
+  color: #f3f4f6;
   text-transform: uppercase;
   cursor: pointer;
   font-weight: bold;
   font-family: "Roboto Condensed", sans-serif;
-  background-color: #ec5242;
-  border: none;
+  border-radius: 10px;
+  width: 40%;
 }
 
 .submit-div {
   display: flex;
+  align-items: center;
   justify-content: center;
   height: 90px;
   margin-bottom: 30px;
@@ -347,6 +359,7 @@ h3 {
 
   .card-div {
     width: 85%;
+    margin: 80px;
   }
 
   .img-div {
