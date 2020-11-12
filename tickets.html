@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="assets/styles/tickets.css">
+  <link
+  rel="stylesheet"
+  href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+  integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+  crossorigin="anonymous"
+/>
+</head>
+<body>
+  <main class="container-fluid">
+    <nav class="row d-none d-md-block">
+      <nav class="col-12 top-nav py-2 text-right">
+        <aside class="container p-0">
+          <ul class="list-unstyled m-0">
+            <li class="list-inline-item pr-2">
+              <i class="text-white fab fa-facebook-f"></i>
+            </li>
+            <li class="list-inline-item pr-3">
+              <i class="text-white fab fa-twitter"></i>
+            </li>
+            <li class="list-inline-item pr-3">
+              <a class="text-white" href="#">English</a>
+            </li>
+            <li class="list-inline-item pr-3">
+              <a class="text-white" href="#">Login</a>
+            </li>
+          </ul>
+        </aside>
+      </nav>
+    </nav>
+    <nav class="row d-none d-md-block">
+      <article
+        class="container d-none d-flex justify-content-between align-items-center py-1 pt-3"
+      >
+        <h2 class="d-none">"future"</h2>
+        <img
+          class="bot-nav-img bot-div"
+          src="assets/img/img.png"
+          alt="Entertainment logo"
+        />
+        <ul class="list-unstyled">
+          <li class="list-inline-item">
+            <a class="px-4 text-secondary" href="about.html">About</a>
+          </li>
+          <li class="list-inline-item">
+            <a class="px-4 text-secondary" href="#main">Program</a>
+          </li>
+          <li class="list-inline-item">
+            <a class="px-4 text-secondary" href="tickets.html">Tickets</a>
+          </li>
+        </ul>
+      </article>
+    </nav>
+    <div class="header-div">
+      <header class="row">
+        <nav class="col-12 d-md-none">
+          <nav class="menuToggle">
+            <input type="checkbox">
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul class="menu">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="plans.html">Ticket</a></li>
+            </ul>
+          </nav>
+        </nav>
+        </header>
+      </div>
+          <article class="container text-center">
+            <h2>Select Tickets</h2>
+            <hr class="hr1">
+            <p> Please select your preferred ticket</p>
+          </article>
+          <section class="container section-div">
+            <div class="border-image">
+              <table  class="table table-div ">
+                <tr>
+                  <th scope="col">Tickets</th>
+                  <th scope="col">Basic Ticket</th>
+                  <th scope="col">Premium Ticket</th>
+                  <th scope="col">V.I.P Ticket</th>
+                </tr>
+                <tr >
+                  <td >Normal</td>
+                  <td> <input type="radio"   name="price check">
+                    <label class="label-div" >$50</label></td>
+                    <td> <input type="radio"   name="price check">
+                      <label class="label-div" >$80</label></td>
+                      <td> <input type="radio"   name="price check">
+                        <label class="label-div" >$150</label></td>
+                      </tr>
+                      <tr>
+                        <td>Student</td>
+                        <td> <input type="radio"   name="price check">
+                          <label class="label-div">$50</label></td>
+                          <td> <input type="radio"   name="price check">
+                            <label class="label-div">$70</label></td>
+                            <td> <input type="radio"   name="price check">
+                              <label class="label-div">$80</label></td>
+                            </tr>
+                            <tr>
+                              <td>Group (per Ticket)</td>
+                              <td> <input type="radio"   name="price check">
+                                <label class="label-div">$50</label></td>
+                                <td> <input type="radio"   name="price check">
+                                  <label class="label-div">$70</label></td>
+                                  <td> <input type="radio"   name="price check">
+                                    <label class="label-div">$120</label></td>
+                                  </tr>
+                                </table>
+                              </div>
+            <button type="button" class="btn btn-lg prim-bg text-white my-4">Select Ticket</button>
+          </section>
+        </main>
+</body>
+</html>

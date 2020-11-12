@@ -1,0 +1,376 @@
+body {
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+}
+
+h4,
+li,
+h2 {
+  font-size: 22px;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+/* @font-face kit by Fonts2u (https://fonts2u.com) */
+@font-face {
+  font-family: "Cocogoose";
+  src: url("../fonts/Cocogoose_trial.eot") format("eot"), url("../fonts/Cocogoose_trial.woff") format("woff"), url("../fonts/Cocogoose_trial.ttf") format("truetype"), url("../fonts/Cocogoose_trial.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.menuToggle {
+  display: block;
+  z-index: 1;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+.menuToggle input {
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -2px;
+  left: 15px;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 2;
+  -webkit-touch-callout: none;
+}
+
+.menuToggle span {
+  display: block;
+  width: 39px;
+  height: 6px;
+  margin-bottom: 5px;
+  position: relative;
+  background: #232323;
+  border-radius: 3px;
+  z-index: 1;
+  -webkit-transform-origin: 4px 0;
+  transform-origin: 4px 0;
+  -webkit-transition: background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  transition: background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+}
+
+.menuToggle span:first-child {
+  -webkit-transform-origin: 0% 0%;
+  transform-origin: 0% 0%;
+}
+
+.menuToggle span:nth-last-child(2) {
+  -webkit-transform-origin: 0% 100%;
+  transform-origin: 0% 100%;
+}
+
+.menuToggle input:checked ~ span {
+  opacity: 1;
+  -webkit-transform: rotate(45deg) translate(-2px, -1px);
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+
+.menuToggle input:checked ~ span:nth-last-child(3) {
+  opacity: 0;
+  -webkit-transform: rotate(0deg) scale(0.2, 0.2);
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+.menuToggle input:checked ~ span:nth-last-child(2) {
+  -webkit-transform: rotate(-45deg) translate(0, -1px);
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+.menuToggle input:checked ~ ul {
+  -webkit-transform: none;
+  transform: none;
+}
+
+.menuToggle .menu {
+  position: absolute;
+  width: 300px;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+  background: #ededed;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  -webkit-transform-origin: 0% 0%;
+  transform-origin: 0% 0%;
+  -webkit-transform: translate(-100%, 0);
+  transform: translate(-100%, 0);
+  -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  transition: -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+}
+
+.menuToggle .menu li {
+  padding: 10px 0;
+}
+
+.menuToggle .menu li a {
+  text-decoration: none;
+  color: #232323;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+
+.menuToggle .menu li :hover {
+  color: tomato;
+}
+
+.bot-nav .bot-nav-img {
+  max-height: 80px;
+}
+
+.position-rel {
+  position: relative;
+}
+
+/* Main container */
+.jumbotron {
+  background: linear-gradient(to top, #f6f6f6, #f9f9f9e0), url(../img/concert.jpg) center no-repeat;
+  background-size: cover;
+}
+
+.text-bg {
+  background: linear-gradient(#e9301bc6, #e22d18a8), url(../img/bg-text.jpg) no-repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-position: top;
+  background-size: cover;
+  width: 100%;
+  font-size: 7vw;
+}
+
+.top-nav {
+  background-color: #3e3e3e;
+}
+
+.bot-div {
+  height: 60px;
+  width: 60px;
+}
+
+.font-div {
+  font-size: 30px;
+  margin-left: 30px;
+}
+
+.hr2 {
+  margin-top: 40px;
+  background-color: #ec5242;
+}
+
+.icon-div {
+  font-size: 50px;
+  color: white;
+}
+
+.first-div {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  margin-left: 100px;
+  width: 60%;
+}
+
+.first-div h1 {
+  font-family: "Cocogoose", sans-serif;
+  color: #ec5242;
+}
+
+.text-div h4 {
+  font-family: "Lato", sans-serif;
+  font-size: 50px;
+  font-weight: normal;
+  color: #ec5242;
+}
+
+.second-div {
+  font-family: "Cocogoose", sans-serif;
+  font-weight: lighter;
+  margin: 10px 0;
+  color: #5d5d5d;
+}
+
+.second-div p {
+  font-size: 11px;
+}
+
+.date-div {
+  display: flex;
+  margin-left: 100px;
+}
+
+.date-div h2 {
+  font-family: "Cocogoose", sans-serif;
+  color: #575757;
+}
+
+.address {
+  font-weight: 500;
+  color: #575757;
+  margin-left: 100px;
+}
+
+.cards .card {
+  background-color: rgba(255, 255, 255, 0.061);
+}
+
+.card:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.main-div {
+  background-image: url(../img/metal-pattern.png);
+  background-position: center;
+  background-repeat: repeat;
+}
+
+.hr1 {
+  width: 40px;
+  background-color: #ec5242;
+}
+
+.hr3 {
+  margin-top: 60px;
+  background-color: #ec5242;
+}
+
+.main-program {
+  display: flex;
+  margin: 0 30px;
+}
+
+.card-div {
+  width: 30%;
+}
+
+.card-main {
+  width: 80%;
+}
+
+.p2-div {
+  font-size: 12px;
+}
+
+.main-program p {
+  font-family: "Cocogoose-light", sans-serif;
+  font-weight: lighter;
+  color: #f3f4f6;
+}
+
+.main-program h3 {
+  text-align: center;
+  justify-content: center;
+  color: #ec5242;
+}
+
+.program-div {
+  display: flex;
+  justify-content: center;
+  margin: 15px;
+}
+
+.form-submit {
+  color: #f3f4f6;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: bold;
+  font-family: "Roboto Condensed", sans-serif;
+  border-radius: 10px;
+  width: 40%;
+}
+
+.submit-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90px;
+  margin-bottom: 30px;
+}
+
+.special-div {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin: 15px;
+}
+
+.band-div {
+  display: block;
+  margin-left: 30px;
+}
+
+.img-div {
+  height: 100px;
+  align-content: center;
+  margin-top: 30px;
+}
+
+.featured-div h2 {
+  font-weight: bold;
+  text-align: center;
+  color: #3e3d44;
+}
+
+.p-div {
+  color: #ec5242;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+}
+
+.title-div {
+  line-height: 10px;
+  height: 30px;
+}
+
+.footer-div {
+  background-color: #414246;
+}
+
+@media (max-width: 768px) {
+  .main-div h3 {
+    text-align: center;
+    color: #f3f3f3;
+  }
+
+  .first-div {
+    margin-left: 5px;
+    width: 100%;
+  }
+
+  .grid {
+    display: block;
+  }
+
+  .card-div {
+    width: 85%;
+    margin: 80px;
+  }
+
+  .img-div {
+    width: 40%;
+  }
+
+  .date-div {
+    margin-left: 10px;
+  }
+
+  .address {
+    margin-left: 10px;
+  }
+}
