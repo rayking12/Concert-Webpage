@@ -4,12 +4,12 @@ Give a ⭐️ if you like this project!<br><br>
 
 # HTML/CSS Capstone Project : OPENFEST CONCERT PAGE
 
-![screenshot](assets/img/Screenshot.png)
+![screenshot](assets/img/screenshot.png)
 
  _OpenFest is a concert organized annually with several special appearances._
 
 
-<img src="assets/img/Screenshot.png" align="right" width="40%">
+<img src="assets/img/screenshot.png" align="right" width="40%">
 
 ## 📺 Live Demo 
 
